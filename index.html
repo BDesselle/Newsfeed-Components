@@ -1,4 +1,4 @@
-<!-- Do not add anything to the HTML -->
+<!-- Do not add anything to the HTML until Part 3 of the project -->
 <!DOCTYPE html>
 <html>
 
@@ -7,6 +7,7 @@
   <link rel="stylesheet" type="text/css" media="screen" href="./CSS/index.css" />
   <script src="./Menu/Menu.js" async></script>
   <script src="./Article/Article.js" async></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js" async></script>
 </head>
 
 <body>
@@ -14,8 +15,27 @@
     <img class="menu-button" src="./assets/menu.png" />
     <h1>Lambda School Newsfeed</h1>
   </div>
-  <div class="articles"></div>
+  <div class="menu">
+    <ul>
+      <li>Students</li>
+      <li>Faculty</li>
+      <li>What's New</li>
+      <li>Tech Trends</li>
+      <li>Music</li>
+      <li>Log Out</li>
+      <li class="addArticle">Add Article</li>
+    </ul>
+    <div id="myModal" class="modal">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <form onsubmit="">Title:<br> <input type="text" name="title" class="newArticleTitle"><br>
+          Article:<br> <input type="text" name="article" class="newArticle"><br>
+          <button class="submitArticle">Submit</button></form>
+      </div>
+    </div>
+  </div>
+  <div class="articles">
+  </div>
 </body>
 
 </html>
-<!-- Do not add anything to the HTML -->
